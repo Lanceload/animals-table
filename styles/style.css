@@ -1,14 +1,15 @@
 img{
-	height: 200px;
-	width: 200px;
+	height: 100%;
+	width: 100%;
 }
 
-.image{
+.gallery{
 	width: 800px;
 	height: 600px;
 	display: grid;
 	gap: 7px;
-	grid-template-columns: 1fr 1fr 1fr;
+	grid-template-columns: 1fr 1fr 1fr 1fr;
+	grid-template-rows: auto;
 	grid-template-areas:
     "olen olen lisa lev"
     "tigr sova sova jiraf"
@@ -17,7 +18,6 @@ img{
 
 .olen{
 	grid-area: olen;
-	width: 407px;
 }
 .lisa{
 	grid-area: lisa;
@@ -27,14 +27,14 @@ img{
 }
 .tigr{
 	grid-area: tigr;
+	object-fit: none;
+   object-position: -128px;
 }
 .sova{
 	grid-area: sova;
-	width: 407px;
 }
 .jiraf{
 	grid-area: jiraf;
-	height: 407px;
 }
 .enot{
 	grid-area: enot;
@@ -44,5 +44,28 @@ img{
 }
 .wolf{
 	grid-area: wolf;
+}
+
+.animal{
+	position: relative;
+}
+
+.animal div{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 100%;
+	height: 100%;
+	color: rgb(255, 210, 210);
+	position: absolute;
+	top: 0;
+	left: 0;
+	font-size: 35px;
+	opacity: 0;
+	transition: opacity 0.5s ease-in-out;
+}
+
+.animal:hover div{
+	opacity: 1;
 }
 
