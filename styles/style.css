@@ -1,0 +1,48 @@
+img{
+	height: 200px;
+	width: 200px;
+}
+
+.image{
+	width: 800px;
+	height: 600px;
+	display: grid;
+	gap: 7px;
+	grid-template-columns: 1fr 1fr 1fr;
+	grid-template-areas:
+    "olen olen lisa lev"
+    "tigr sova sova jiraf"
+    "enot leopard wolf jiraf";
+}
+
+.olen{
+	grid-area: olen;
+	width: 407px;
+}
+.lisa{
+	grid-area: lisa;
+}
+.lev{
+	grid-area: lev;
+}
+.tigr{
+	grid-area: tigr;
+}
+.sova{
+	grid-area: sova;
+	width: 407px;
+}
+.jiraf{
+	grid-area: jiraf;
+	height: 407px;
+}
+.enot{
+	grid-area: enot;
+}
+.leopard{
+	grid-area: leopard;
+}
+.wolf{
+	grid-area: wolf;
+}
+
