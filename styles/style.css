@@ -1,9 +1,3 @@
-img{
-	height: 100%;
-	width: 100%;
-}
-
-
 .gallery{
 	width: 800px;
 	height: 600px;
@@ -14,46 +8,89 @@ img{
 	grid-template-areas:
     "olen olen lisa lev"
     "tigr sova sova jiraf"
-    "enot leopard wolf jiraf";
+    "enot leopard wolf jiraf"
 }
 
 
 .olen{
 	grid-area: olen;
 }
+.olen img{
+	width: 400px;
+}
+
 .lisa{
 	grid-area: lisa;
 }
+.lisa img{
+	height: 200px;
+	object-position: -15px;
+}
+
 .lev{
 	grid-area: lev;
 }
+.lev img{
+	height: 200px;
+	object-position: -20px;
+}
+
 .tigr{
 	grid-area: tigr;
-	object-fit: cover;
 }
+.tigr img{
+	height: 199px;
+	object-position: -36px;
+}
+
 .sova{
 	grid-area: sova;
 }
+.sova img{
+	width: 395px;
+	object-position: 0px -6px;
+}
+
 .jiraf{
 	grid-area: jiraf;
 }
+.jiraf img{
+	height: 395px;
+	object-position: -21px;
+}
+
 .enot{
 	grid-area: enot;
 }
+.enot img{
+	width: 252px;
+	object-position: -37px;
+}
+
 .leopard{
 	grid-area: leopard;
 }
+.leopard img{
+	width: 198px;
+	object-position: -37px;
+}
+
 .wolf{
 	grid-area: wolf;
 }
+.wolf img{
+	width: 194px;
+}
+
 
 .animal{
 	position: relative;
 	transition: 1.2s;
+	overflow: hidden;
 }
 
 .animal img{
-	transition: 0.5s;
+	transition: all 0.5s linear;
 }
 
 .animal div{
@@ -78,7 +115,6 @@ img{
 
 .animal:hover img{
 	filter: blur(1.4px);
-	transform: scale(1.03);
-	border: 1px solid rgb(0, 0, 0);
+	transform: scale(1.1);
 }
 
